@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>BenchmarkRun-joined-2022-02-02-19-18-27</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1165 (21H1/May2021Update)
+11th Gen Intel Core i7-1185G7 3.00GHz, 1 CPU, 8 logical and 4 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4420.0), X64 RyuJIT
+  Job-UQZRFX : .NET 6.0.0 (6.0.21.52210), X64 RyuJIT
+  Job-XTPWQX : .NET Framework 4.8 (4.8.4420.0), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th> Job</th><th>     Runtime</th><th>Toolchain</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>EscapeUri</td><td>Job-UQZRFX</td><td>.NET 6.0</td><td>net60</td><td>7.187 ns</td><td>0.1319 ns</td><td>0.1233 ns</td><td>0.16</td><td>-</td>
+</tr><tr><td>EscapeUri</td><td>Job-XTPWQX</td><td>.NET Framework 4.8</td><td>net48</td><td>43.713 ns</td><td>0.8832 ns</td><td>0.9070 ns</td><td>1.00</td><td>-</td>
+</tr><tr><td>EscapeData</td><td>Job-UQZRFX</td><td>.NET 6.0</td><td>net60</td><td>8.114 ns</td><td>0.1818 ns</td><td>0.1785 ns</td><td>0.20</td><td>-</td>
+</tr><tr><td>EscapeData</td><td>Job-XTPWQX</td><td>.NET Framework 4.8</td><td>net48</td><td>41.412 ns</td><td>0.7284 ns</td><td>0.6813 ns</td><td>1.00</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
